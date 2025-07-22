@@ -43,10 +43,96 @@ nav
       border: none
       height: 42.4px
       background-color: transparent
-      color: #ffffff
+      color: #000000
       font-size: 16px
       font-weight: 600
       padding: 10px
       border-bottom: 2px solid #000000
       outline: none
-    
+.todo-list
+  display: flex
+  justify-content: center
+  align-items: space-around
+  background: rgba(186, 246, 248, 0.2)
+  backdrop-filter: blur(8px)
+  -webkit-backdrop-filter: blur(8px)
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1)
+  border: 2px solid #000000
+  border-radius: 5px
+  padding: 10px
+  margin: 10px
+  height: 60px
+  font-size: 0.9em
+  .todo
+    background-color: transparent
+    border-radius: 5px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    h3
+      flex: 1 1 auto
+      margin: 0
+      word-break: break-word
+      white-space: normal
+    .option
+      min-width: 60px
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      gap: 8px
+      .edit
+        background: rgba(50, 250, 5, 0.438)
+        backdrop-filter: blur(8px)
+        -webkit-backdrop-filter: blur(8px)
+        box-shadow: 0 4px 16px rgba(0, 255, 4, 0.1)
+      .delete
+        background: rgba(242, 8, 8, 0.59)
+        backdrop-filter: blur(8px)
+        -webkit-backdrop-filter: blur(8px)
+        box-shadow: 0 4px 16px rgba(0, 255, 4, 0.1)
+      button
+        min-width: 30px
+        min-height: 35px
+        border: none
+        border-radius: 5px
+
+        svg
+          height: 100%
+          width: 100%
+          
+.add-note
+  position: fixed
+  bottom: 20px
+  right: 20px
+  height: 35px
+  width: 35px
+  border: none
+  border-radius: 50%
+  background: rgba(57, 110, 232, 0.59)
+  backdrop-filter: blur(8px)
+  -webkit-backdrop-filter: blur(8px)
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
+  svg
+    height: 100%
+    width: 100%
+.add-input-box
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 5px
+  button
+    border-radius: 5px
+    border: none
+    background: rgba(50, 250, 5, 0.438)
+    backdrop-filter: blur(8px)
+    -webkit-backdrop-filter: blur(8px)
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
+    color: #000000
+  textarea
+    background: rgba(105, 109, 117, 0.59)
+    backdrop-filter: blur(8px)
+    -webkit-backdrop-filter: blur(8px)
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
+    color: #000000
+    border-radius: 5px
